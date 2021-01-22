@@ -112,7 +112,7 @@ function sir_initiation(;
     end
 
     return model
-end</code></pre><p>Notice the constant <code>steps_per_day</code>, which approximates how many model steps correspond to one day (since the parameters we used in the previous graph SIR example were given in days).</p><p>To visualize this model, we will use black color for the susceptible, red for the infected infected and green for the recovered, leveraging <a href="examples/@ref"><code>plotabm</code></a>.</p><pre><code class="language-julia">sir_model = sir_initiation()
+end</code></pre><p>Notice the constant <code>steps_per_day</code>, which approximates how many model steps correspond to one day (since the parameters we used in the previous graph SIR example were given in days).</p><p>To visualize this model, we will use black color for the susceptible, red for the infected infected and green for the recovered, leveraging <a href="../../api/#InteractiveChaos.abm_plot"><code>InteractiveChaos.abm_plot</code></a>.</p><pre><code class="language-julia">sir_model = sir_initiation()
 
 sir_colors(a) = a.status == :S ? &quot;#2b2b33&quot; : a.status == :I ? &quot;#bf2642&quot; : &quot;#338c54&quot;
 
@@ -179,7 +179,7 @@ abm_plot(sir_model; ac = sir_colors, as=10)</code></pre><?xml version="1.0" enco
   <path d="M 74 370 L 79 370 L 79 378 L 74 378 Z M 74 370 "/>
 </clipPath>
 </defs>
-<g id="surface49395">
+<g id="surface49400">
 <rect x="0" y="0" width="600" height="600" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 74 529 L 570 529 L 570 33 L 74 33 Z M 74 529 "/>
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:0.1;stroke-miterlimit:10;" d="M 74 529 L 74 33 M 173.199219 529 L 173.199219 33 M 272.398438 529 L 272.398438 33 M 371.601562 529 L 371.601562 33 M 470.800781 529 L 470.800781 33 "/>
@@ -699,7 +699,7 @@ figure</code></pre><?xml version="1.0" encoding="UTF-8"?>
 </symbol>
 </g>
 </defs>
-<g id="surface54897">
+<g id="surface54902">
 <rect x="0" y="0" width="960" height="540" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 131 472 L 693 472 L 693 30 L 131 30 Z M 131 472 "/>
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:0.1;stroke-miterlimit:10;" d="M 156.289062 472 L 156.289062 30 M 284.015625 472 L 284.015625 30 M 411.746094 472 L 411.746094 30 M 539.472656 472 L 539.472656 30 M 667.199219 472 L 667.199219 30 "/>
@@ -1141,7 +1141,7 @@ figure</code></pre><?xml version="1.0" encoding="UTF-8"?>
 </symbol>
 </g>
 </defs>
-<g id="surface57654">
+<g id="surface57659">
 <rect x="0" y="0" width="960" height="540" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 131 472 L 620 472 L 620 30 L 131 30 Z M 131 472 "/>
 <path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:0.1;stroke-miterlimit:10;" d="M 153.003906 472 L 153.003906 30 M 264.140625 472 L 264.140625 30 M 375.277344 472 L 375.277344 30 M 486.414062 472 L 486.414062 30 M 597.550781 472 L 597.550781 30 "/>
@@ -1644,4 +1644,4 @@ figure</code></pre><?xml version="1.0" encoding="UTF-8"?>
 <path style="fill:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 649.828125 291.421875 L 669.828125 291.421875 "/>
 </g>
 </svg>
-<p>Here you can see the characteristic &quot;flattening the curve&quot; phrase you hear all over the news.</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../sugarscape/">« Sugarscape</a><a class="docs-footer-nextpage" href="../wealth_distribution/">Wealth distribution »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Friday 22 January 2021 23:22">Friday 22 January 2021</span>. Using Julia version 1.5.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+<p>Here you can see the characteristic &quot;flattening the curve&quot; phrase you hear all over the news.</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../sugarscape/">« Sugarscape</a><a class="docs-footer-nextpage" href="../wealth_distribution/">Wealth distribution »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> on <span class="colophon-date" title="Friday 22 January 2021 23:51">Friday 22 January 2021</span>. Using Julia version 1.5.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
